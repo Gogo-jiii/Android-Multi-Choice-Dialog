@@ -36,7 +36,6 @@ public class MultiChoiceDialog extends DialogFragment {
         builder.setMultiChoiceItems(data, selectedData, new DialogInterface.OnMultiChoiceClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i, boolean b) {
-                selectedData[i] = b;
                 String currentItem = data[i];
                 Toast.makeText(context, "Current Item: " + currentItem, Toast.LENGTH_SHORT).show();
             }
